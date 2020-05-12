@@ -1,7 +1,7 @@
 const express=require('express')
-//require('./db/mongoose')
-//const userRouter=require('./router/userRoute')
-//const taskRouter=require('./router/taskRouter')
+require('./db/mongoose')
+const userRouter=require('./router/userRoute')
+const taskRouter=require('./router/taskRouter')
 
 
 
@@ -12,8 +12,8 @@ app.use(express.json())
   
 // })
 
-//app.use(userRouter)
-//app.use(taskRouter)
+app.use(userRouter)
+app.use(taskRouter)
 
 app.get('/',(req,res)=>{
   res.send("hello world");
