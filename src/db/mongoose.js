@@ -1,6 +1,6 @@
 const mongoose = require('mongoose')
 
-mongoose.connect('mongodb+srv://kpkeerthi:Keerthi20@dbcluster-voldi.gcp.mongodb.net/task-manager?retryWrites=true&w=majority',{
+mongoose.connect(process.env.dbname,{
     useNewUrlParser:true,
     useCreateIndex:true,
     useUnifiedTopology:true
