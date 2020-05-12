@@ -1,7 +1,7 @@
 const express=require('express')
-require('./db/mongoose')
-const userRouter=require('./router/userRoute')
-const taskRouter=require('./router/taskRouter')
+//require('./db/mongoose')
+//const userRouter=require('./router/userRoute')
+//const taskRouter=require('./router/taskRouter')
 
 
 
@@ -9,7 +9,7 @@ const app=express();
 app.use(express.json())
 // app.use((req,res,next)=>{
 //     res.status(503).send("maintenance error");
-   
+  
 // })
 
 //app.use(userRouter)
